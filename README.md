@@ -39,8 +39,12 @@ Plyer is used for notification for setting the alarm
 ## Functions
 
 As of Now This app performs functions :
+
  Play Youtube: It plays Youtube Channel, by providing voice command to levo . User can specify which video needs to be played on youtube.
+ 
  Read Wikipedia: It reads Wikipedia Content of specified header by the user.
+ 
  Time and Set alarm: Informs the time and also sets reminder by taking user input.
+ 
  Rock Paper Scissor: Plays Rock Paper & Scissor with user input and comp input.
  
