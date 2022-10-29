@@ -2,9 +2,9 @@
 Levo is an voice assistant / virtual assitant that performs various functions following the voice command provided by the user.
 
 ## Python
-Install Python
+  - Install Python
 
-Install Pip
+  - Install Pip
 
 Then you need to install the python packages.
 
@@ -40,11 +40,11 @@ Plyer is used for notification for setting the alarm
 
 As of Now This app performs functions :
 
- Play Youtube: It plays Youtube Channel, by providing voice command to levo . User can specify which video needs to be played on youtube.
+ - Play Youtube: It plays Youtube Channel, by providing voice command to levo . User can specify which video needs to be played on youtube.
  
- Read Wikipedia: It reads Wikipedia Content of specified header by the user.
+ - Read Wikipedia: It reads Wikipedia Content of specified header by the user.
  
- Time and Set alarm: Informs the time and also sets reminder by taking user input.
+ - Time and Set alarm: Informs the time and also sets reminder by taking user input.
  
- Rock Paper Scissor: Plays Rock Paper & Scissor with user input and comp input.
+ - Rock Paper Scissor: Plays Rock Paper & Scissor with user input and comp input.
  
