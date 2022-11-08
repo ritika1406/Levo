@@ -12,7 +12,7 @@ from enum import IntEnum
 
 listener = sr.Recognizer()              #voice recognization
 engine = pyttsx3.init()                 #speech package
-voices = engine.getProperty('voices')        #different voice of alexa
+voices = engine.getProperty('voices')        #different voice of levo
 engine.setProperty('voice', voices[1].id)      #setting to female version of voices
 
 
@@ -21,15 +21,15 @@ def talk(text):
     engine.say(text)                      
     engine.runAndWait()
 
-def talk_command():
+def speak_command():
         try:
             with sr.Microphone() as source:                   #setting microphone as a source
                print("listening")        
                voice = listener.listen(source)               #what was the context from the source
                command = listener.recognize_google(voice)            #recognixe the voice and conversion with the help of google api
                command = command.lower()                               #convert it to lower case
-               if 'alexa' in command:
-                    command=command.replace('alexa', '')                                    #if alexa in the sentence then only print the value    
+               if 'levo' in command:
+                    command=command.replace('levo', '')                                    #if levo in the sentence then only print the value    
                     talk(command)
         except:
             pass
@@ -41,8 +41,8 @@ class Action(IntEnum):            #stone paper scissor notation
     Scissor = 2 
 
 
-def run_alexa():                                                   #performing function
-    command= talk_command()
+def run_levo():                                                   #performing function
+    command= speak_command()
     print(command)
     if 'play' in command:                                         #plays youtube videos
         song = command.replace('play', '')
@@ -91,4 +91,4 @@ def run_alexa():                                                   #performing f
         else:
             print("no such")
 
-run_alexa()
+run_levo()
